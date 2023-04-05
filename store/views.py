@@ -6,6 +6,14 @@ import datetime
 from .models import *
 from .utils import cookieCart, cartData, guestOrder
 # Create your views here.
+def about(request):
+     Data = cartData(request)
+     cartItems = Data['cartItems']
+
+     products = Product.objects.all()
+     context = {'products': products, 'cartItems': cartItems}
+     return render(request, 'store/about.html', context)
+
 def store(request):
 
      Data = cartData(request)

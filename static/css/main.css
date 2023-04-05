@@ -6,11 +6,52 @@ h1,h2,h3,h4,h5,h6{
     color:hsl(0, 0%, 30%);
 }
 
+footer{
+    height: 10px;
+}
+
+@font-face{
+    font-family: Scribble;
+    src: url('../font/Scribble.ttf');  
+}
+
+.banner{
+    background-image: url('../images/placeholder.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 33px;
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+}
+
+/*.bi{
+    background-image: url('../images/icon.jpg');
+    background-color: blue;
+}*/
+
+.banner .content{
+    font-size: 8vw;
+    color: white;
+    text-decoration: none;
+    font-family: Scribble;
+    font-stretch: condensed
+}
+
+.container{
+    margin-bottom: 25px;
+}
+
 .box-element{
     box-shadow:hsl(0, 0%, 80%) 0 0 16px;
     background-color: #fff;
     border-radius: 4px;
     padding: 10px;
+}
+
+.item-price{
+    font-size: 20px;
+    margin-right: 3px;
 }
 
 .thumbnail{
@@ -48,6 +89,7 @@ h1,h2,h3,h4,h5,h6{
 
 .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .btn{
